@@ -15,7 +15,7 @@ export class AppController {
     return this.appService.getOI();
   }
 
-  @Post('assistente-ai')
+  @Post('assistente-ia')
   async generateContent(@Body() body: { prompt: string }): Promise<string> {
     const response = await this.appService.generateContent(body.prompt);
     return response;
