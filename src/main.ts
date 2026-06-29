@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
     origin: [
-      'https://projeto-financa-dio-1.onrender.com/',
+      'https://projeto-financa-dio-1.onrender.com/assistente-ai',
       'http://localhost:5174',
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
